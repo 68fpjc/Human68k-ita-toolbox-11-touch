@@ -2,23 +2,23 @@
 *
 * Itagaki Fumihiko 12-Oct-92  Create.
 * 1.0
-* Itagaki Fumihiko 06-Nov-92  strip_excessive_slashes‚ÌƒoƒOfix‚É”º‚¤‰ü”ÅD
+* Itagaki Fumihiko 06-Nov-92  strip_excessive_slashesã®ãƒã‚°fixã«ä¼´ã†æ”¹ç‰ˆï¼
 * 1.1
-* Itagaki Fumihiko 16-Nov-92  get_present_time‚ÌC³D
+* Itagaki Fumihiko 16-Nov-92  get_present_timeã®ä¿®æ­£ï¼
 * 1.2
-* Itagaki Fumihiko 30-Dec-92  tfopen ‚ğŒÄ‚Î‚¸‚É’¼Ú OPEN ‚·‚é‚æ‚¤‚É‚µ‚½D
-* Itagaki Fumihiko 30-Dec-92  msg_write_disabled ‚ğ perror ‚É’Ç‰Á‚µ‚½D
-* Itagaki Fumihiko 30-Dec-92  reffile ‚ÌƒGƒ‰[‚Í -f ‚Å‚à•ñ‚·‚é‚æ‚¤‚É‚µ‚½D
-* Itagaki Fumihiko 30-Dec-92  reffile ‚ÌƒƒfƒBƒA‚ªƒvƒƒeƒNƒg‚³‚ê‚Ä‚¢‚é‚ÆƒGƒ‰[‚Æ‚È‚é•s‹ï‡‚ğC³D
+* Itagaki Fumihiko 30-Dec-92  tfopen ã‚’å‘¼ã°ãšã«ç›´æ¥ OPEN ã™ã‚‹ã‚ˆã†ã«ã—ãŸï¼
+* Itagaki Fumihiko 30-Dec-92  msg_write_disabled ã‚’ perror ã«è¿½åŠ ã—ãŸï¼
+* Itagaki Fumihiko 30-Dec-92  reffile ã®ã‚¨ãƒ©ãƒ¼ã¯ -f ã§ã‚‚å ±å‘Šã™ã‚‹ã‚ˆã†ã«ã—ãŸï¼
+* Itagaki Fumihiko 30-Dec-92  reffile ã®ãƒ¡ãƒ‡ã‚£ã‚¢ãŒãƒ—ãƒ­ãƒ†ã‚¯ãƒˆã•ã‚Œã¦ã„ã‚‹ã¨ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹ä¸å…·åˆã‚’ä¿®æ­£ï¼
 * Itagaki Fumihiko 10-Jan-93  GETPDB -> lea $10(a0),a0
-* Itagaki Fumihiko 20-Jan-93  ˆø” - ‚Æ -- ‚Ìˆµ‚¢‚Ì•ÏX
-* Itagaki Fumihiko 22-Jan-93  ƒXƒ^ƒbƒN‚ğŠg’£
-* Itagaki Fumihiko 26-Jan-93  -f ƒIƒvƒVƒ‡ƒ“‚ªw’è‚³‚ê‚Ä‚¢‚éê‡‚É‚ÍCƒtƒ@ƒCƒ‹ˆø”‚ª—^‚¦‚ç‚ê
-*                             ‚Ä‚¢‚È‚­‚Ä‚à³íI—¹‚·‚é‚æ‚¤‚É‚µ‚½D
+* Itagaki Fumihiko 20-Jan-93  å¼•æ•° - ã¨ -- ã®æ‰±ã„ã®å¤‰æ›´
+* Itagaki Fumihiko 22-Jan-93  ã‚¹ã‚¿ãƒƒã‚¯ã‚’æ‹¡å¼µ
+* Itagaki Fumihiko 26-Jan-93  -f ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã«ã¯ï¼Œãƒ•ã‚¡ã‚¤ãƒ«å¼•æ•°ãŒä¸ãˆã‚‰ã‚Œ
+*                             ã¦ã„ãªãã¦ã‚‚æ­£å¸¸çµ‚äº†ã™ã‚‹ã‚ˆã†ã«ã—ãŸï¼
 * 1.3
-* Itagaki Fumihiko 03-Jan-94  -r <file> ‚â -R <file> ‚Í -r<file> -R<file> ‚Æ‘‚¢‚Ä‚à—Ç‚¢D
+* Itagaki Fumihiko 03-Jan-94  -r <file> ã‚„ -R <file> ã¯ -r<file> -R<file> ã¨æ›¸ã„ã¦ã‚‚è‰¯ã„ï¼
 * 1.4
-* Itagaki Fumihiko 05-Jan-95  w’èŒ`®‚ğ [[CC]YY]MMDDhhmm[.ss] ‚É•ÏX
+* Itagaki Fumihiko 05-Jan-95  æŒ‡å®šå½¢å¼ã‚’ [[CC]YY]MMDDhhmm[.ss] ã«å¤‰æ›´
 * 1.5
 *
 * Usage: touch [ -cdf ] [ -rR file | [[CC]YY]MMDDhhmm[.ss] ] [ -- ] <file> ...
@@ -37,7 +37,7 @@
 .xref strfor1
 .xref strip_excessive_slashes
 
-STACKSIZE	equ	16384			*  ƒX[ƒp[ƒoƒCƒUƒ‚[ƒh‚Å‚Í15KBˆÈã•K—v
+STACKSIZE	equ	16384			*  ã‚¹ãƒ¼ãƒ‘ãƒ¼ãƒã‚¤ã‚¶ãƒ¢ãƒ¼ãƒ‰ã§ã¯15KBä»¥ä¸Šå¿…è¦
 
 FLAG_c		equ	0
 FLAG_d		equ	1
@@ -67,8 +67,8 @@ start:
 		bra.s	start1
 		dc.b	'#HUPAIR',0
 start1:
-		lea	stack_bottom(pc),a7		*  A7 := ƒXƒ^ƒbƒN‚Ì’ê
-		lea	$10(a0),a0			*  A0 : PDBƒAƒhƒŒƒX
+		lea	stack_bottom(pc),a7		*  A7 := ã‚¹ã‚¿ãƒƒã‚¯ã®åº•
+		lea	$10(a0),a0			*  A0 : PDBã‚¢ãƒ‰ãƒ¬ã‚¹
 		move.l	a7,d0
 		sub.l	a0,d0
 		move.l	d0,-(a7)
@@ -76,27 +76,27 @@ start1:
 		DOS	_SETBLOCK
 		addq.l	#8,a7
 	*
-	*  ˆø”•À‚ÑŠi”[ƒGƒŠƒA‚ğŠm•Û‚·‚é
+	*  å¼•æ•°ä¸¦ã³æ ¼ç´ã‚¨ãƒªã‚¢ã‚’ç¢ºä¿ã™ã‚‹
 	*
-		lea	1(a2),a0			*  A0 := ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“‚Ì•¶š—ñ‚Ìæ“ªƒAƒhƒŒƒX
-		bsr	strlen				*  D0.L := ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“‚Ì•¶š—ñ‚Ì’·‚³
+		lea	1(a2),a0			*  A0 := ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ã®æ–‡å­—åˆ—ã®å…ˆé ­ã‚¢ãƒ‰ãƒ¬ã‚¹
+		bsr	strlen				*  D0.L := ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ã®æ–‡å­—åˆ—ã®é•·ã•
 		addq.l	#1,d0
 		bsr	malloc
 		bmi	insufficient_memory
 
-		movea.l	d0,a1				*  A1 := ˆø”•À‚ÑŠi”[ƒGƒŠƒA‚Ìæ“ªƒAƒhƒŒƒX
+		movea.l	d0,a1				*  A1 := å¼•æ•°ä¸¦ã³æ ¼ç´ã‚¨ãƒªã‚¢ã®å…ˆé ­ã‚¢ãƒ‰ãƒ¬ã‚¹
 	*
-	*  lndrv ‚ª‘g‚İ‚Ü‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğŒŸ¸‚·‚é
+	*  lndrv ãŒçµ„ã¿è¾¼ã¾ã‚Œã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’æ¤œæŸ»ã™ã‚‹
 	*
 		bsr	getlnenv
 		move.l	d0,lndrv
 	*
-	*  ƒIƒvƒVƒ‡ƒ“ˆø”‚ğ‰ğß‚·‚é
+	*  ã‚ªãƒ—ã‚·ãƒ§ãƒ³å¼•æ•°ã‚’è§£é‡ˆã™ã‚‹
 	*
-		moveq	#0,d6				*  D6.W : ƒGƒ‰[EƒR[ƒh
-		bsr	DecodeHUPAIR			*  ˆø”‚ğƒfƒR[ƒh‚·‚é
-		movea.l	a1,a0				*  A0 : ˆø”ƒ|ƒCƒ“ƒ^
-		move.l	d0,d7				*  D7.L : ˆø”ƒJƒEƒ“ƒ^
+		moveq	#0,d6				*  D6.W : ã‚¨ãƒ©ãƒ¼ãƒ»ã‚³ãƒ¼ãƒ‰
+		bsr	DecodeHUPAIR			*  å¼•æ•°ã‚’ãƒ‡ã‚³ãƒ¼ãƒ‰ã™ã‚‹
+		movea.l	a1,a0				*  A0 : å¼•æ•°ãƒã‚¤ãƒ³ã‚¿
+		move.l	d0,d7				*  D7.L : å¼•æ•°ã‚«ã‚¦ãƒ³ã‚¿
 		moveq	#0,d5				*  D5.L : flags
 		clr.l	a4				*  A4 : reffile
 decode_opt_loop1:
@@ -185,7 +185,7 @@ option_r_1:
 
 decode_datime_arg:
 	*
-	*  w’èˆø”‚ğ’²‚×‚é
+	*  æ™‚åˆ»æŒ‡å®šå¼•æ•°ã‚’èª¿ã¹ã‚‹
 	*
 		cmpa.l	#0,a4
 		bne	bad_date
@@ -311,8 +311,8 @@ datimearg_ok:
 
 no_datime_arg:
 	*
-	*  -rR ‚ªw’è‚³‚ê‚Ä‚¢‚é‚È‚çA‚»‚Ìƒtƒ@ƒCƒ‹‚Ì‚ğA
-	*  ‚³‚à‚È‚­‚ÎŒ»İ‚ğ“¾‚é
+	*  -rR ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã€ãã®ãƒ•ã‚¡ã‚¤ãƒ«ã®æ™‚åˆ»ã‚’ã€
+	*  ã•ã‚‚ãªãã°ç¾åœ¨æ™‚åˆ»ã‚’å¾—ã‚‹
 	*
 		cmpa.l	#0,a4
 		bne	get_reffile_datime
@@ -337,16 +337,16 @@ get_reffile_datime:
 		btst	#MODEBIT_LNK,d2
 		beq	do_get_reffile_datime
 
-		*  ƒVƒ“ƒ{ƒŠƒbƒNEƒŠƒ“ƒNEƒtƒ@ƒCƒ‹‚Ì‚ğ“¾‚é
+		*  ã‚·ãƒ³ãƒœãƒªãƒƒã‚¯ãƒ»ãƒªãƒ³ã‚¯ãƒ»ãƒ•ã‚¡ã‚¤ãƒ«ã®æ™‚åˆ»ã‚’å¾—ã‚‹
 		move.l	lndrv,d0
 		beq	do_get_reffile_datime
 
 		movea.l	d0,a2
 		lea	refname(pc),a1
 		clr.l	-(a7)
-		DOS	_SUPER				*  ƒX[ƒp[ƒoƒCƒUEƒ‚[ƒh‚ÉØ‚èŠ·‚¦‚é
+		DOS	_SUPER				*  ã‚¹ãƒ¼ãƒ‘ãƒ¼ãƒã‚¤ã‚¶ãƒ»ãƒ¢ãƒ¼ãƒ‰ã«åˆ‡ã‚Šæ›ãˆã‚‹
 		addq.l	#4,a7
-		move.l	d0,-(a7)			*  ‘O‚Ì SSP ‚Ì’l
+		move.l	d0,-(a7)			*  å‰ã® SSP ã®å€¤
 		movem.l	d5-d7/a0-a4,-(a7)
 		move.l	a0,-(a7)
 		move.l	a1,-(a7)
@@ -367,7 +367,7 @@ get_reffile_datime:
 		lea	10(a7),a7
 		movem.l	(a7)+,d5-d7/a0-a4
 		move.l	d0,d1
-		DOS	_SUPER				*  ƒ†[ƒUEƒ‚[ƒh‚É–ß‚·
+		DOS	_SUPER				*  ãƒ¦ãƒ¼ã‚¶ãƒ»ãƒ¢ãƒ¼ãƒ‰ã«æˆ»ã™
 		addq.l	#4,a7
 		move.l	d1,d0
 		bra	do_get_reffile_datime_1
@@ -432,7 +432,7 @@ reffile_perror_1:
 		bra	exit_program
 
 reffile_bad_link:
-		DOS	_SUPER				*  ƒ†[ƒUEƒ‚[ƒh‚É–ß‚·
+		DOS	_SUPER				*  ãƒ¦ãƒ¼ã‚¶ãƒ»ãƒ¢ãƒ¼ãƒ‰ã«æˆ»ã™
 		addq.l	#4,a7
 		lea	msg_bad_link(pc),a2
 		bsr	werror_myname_word_colon_msg
@@ -451,7 +451,7 @@ touch_error_exit_3:
 *      A0     filename
 *
 * RETURN
-*      D0-D2/A0-A3   ”j‰ó
+*      D0-D2/A0-A3   ç ´å£Š
 *****************************************************************
 touch_one:
 		btst	#FLAG_d,d5
@@ -566,16 +566,16 @@ get2digit:
 *
 * CALL
 *      A0     filename
-*      D1.B   0 : ƒVƒ“ƒ{ƒŠƒbƒNEƒŠƒ“ƒN‚ğ’Ç‚¤
+*      D1.B   0 : ã‚·ãƒ³ãƒœãƒªãƒƒã‚¯ãƒ»ãƒªãƒ³ã‚¯ã‚’è¿½ã†
 *
 * RETURN
 *      A1     real pathname (points static)
-*      D0.L   •‰‚È‚çƒGƒ‰[
-*      D2.L   lgetmode_a1 ‚ÌƒXƒe[ƒ^ƒX
+*      D0.L   è² ãªã‚‰ã‚¨ãƒ©ãƒ¼
+*      D2.L   lgetmode_a1 ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹
 *      CCR    TST.L D0
 *
 * RETURN
-*      D1/A2-A3   ”j‰ó
+*      D1/A2-A3   ç ´å£Š
 *****************************************************************
 findfile:
 		movea.l	a0,a1
@@ -587,9 +587,9 @@ findfile:
 		beq	findfile_return
 
 		tst.b	d1
-		bne	findfile_return			*  ƒŠƒ“ƒNEƒtƒ@ƒCƒ‹‚»‚Ì‚à‚Ì‚ğ“¾‚½
+		bne	findfile_return			*  ãƒªãƒ³ã‚¯ãƒ»ãƒ•ã‚¡ã‚¤ãƒ«ãã®ã‚‚ã®ã‚’å¾—ãŸ
 
-		*  ƒŠƒ“ƒN‚ªQÆ‚·‚éƒtƒ@ƒCƒ‹‚ğ“¾‚é
+		*  ãƒªãƒ³ã‚¯ãŒå‚ç…§ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å¾—ã‚‹
 
 		lea	msg_cannot_access_link(pc),a2
 		move.l	lndrv,d0
@@ -599,9 +599,9 @@ findfile:
 		movea.l	LNDRV_getrealpath(a2),a2
 		lea	refname(pc),a1
 		clr.l	-(a7)
-		DOS	_SUPER				*  ƒX[ƒp[ƒoƒCƒUEƒ‚[ƒh‚ÉØ‚èŠ·‚¦‚é
+		DOS	_SUPER				*  ã‚¹ãƒ¼ãƒ‘ãƒ¼ãƒã‚¤ã‚¶ãƒ»ãƒ¢ãƒ¼ãƒ‰ã«åˆ‡ã‚Šæ›ãˆã‚‹
 		addq.l	#4,a7
-		move.l	d0,-(a7)			*  ‘O‚Ì SSP ‚Ì’l
+		move.l	d0,-(a7)			*  å‰ã® SSP ã®å€¤
 		movem.l	d2-d7/a0-a1/a4-a6,-(a7)
 		move.l	a0,-(a7)
 		move.l	a1,-(a7)
@@ -609,7 +609,7 @@ findfile:
 		addq.l	#8,a7
 		movem.l	(a7)+,d2-d7/a0-a1/a4-a6
 		move.l	d0,d1
-		DOS	_SUPER				*  ƒ†[ƒUEƒ‚[ƒh‚É–ß‚·
+		DOS	_SUPER				*  ãƒ¦ãƒ¼ã‚¶ãƒ»ãƒ¢ãƒ¼ãƒ‰ã«æˆ»ã™
 		addq.l	#4,a7
 		lea	msg_bad_link(pc),a2
 		tst.l	d1
@@ -627,7 +627,7 @@ findfile_nomode:
 		tst.l	d0
 		bmi	findfile_perror
 
-		tst.b	67(a3)				*  basename ‚ª‚ ‚é‚©H
+		tst.b	67(a3)				*  basename ãŒã‚ã‚‹ã‹ï¼Ÿ
 		bne	findfile_return			*  D2.L < 0
 
 		movea.l	a3,a1
@@ -779,29 +779,29 @@ perror_table:
 	dc.w	msg_error-sys_errmsgs			*  25 (-26)
 
 sys_errmsgs:
-msg_error:		dc.b	'ƒGƒ‰[',0
-msg_nofile:		dc.b	'‚±‚Ì‚æ‚¤‚Èƒtƒ@ƒCƒ‹‚âƒfƒBƒŒƒNƒgƒŠ‚Í‚ ‚è‚Ü‚¹‚ñ',0
-msg_nopath:		dc.b	'ƒpƒX‚ª‘¶İ‚µ‚Ä‚¢‚Ü‚¹‚ñ',0
-msg_too_many_openfiles:	dc.b	'ƒI[ƒvƒ“‚µ‚Ä‚¢‚éƒtƒ@ƒCƒ‹‚ª‘½‚·‚¬‚Ü‚·',0
-msg_bad_name:		dc.b	'–¼‘O‚ª–³Œø‚Å‚·',0
-msg_bad_drive:		dc.b	'ƒhƒ‰ƒCƒu‚Ìw’è‚ª–³Œø‚Å‚·',0
-msg_write_disabled:	dc.b	'‘‚«‚İ‚ª‹–‰Â‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ',0
-msg_directory_full:	dc.b	'ƒfƒBƒŒƒNƒgƒŠ‚ª–”t‚Å‚·',0
-msg_disk_full:		dc.b	'ƒfƒBƒXƒN‚ª–”t‚Å‚·',0
+msg_error:		dc.b	'ã‚¨ãƒ©ãƒ¼',0
+msg_nofile:		dc.b	'ã“ã®ã‚ˆã†ãªãƒ•ã‚¡ã‚¤ãƒ«ã‚„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã¯ã‚ã‚Šã¾ã›ã‚“',0
+msg_nopath:		dc.b	'ãƒ‘ã‚¹ãŒå­˜åœ¨ã—ã¦ã„ã¾ã›ã‚“',0
+msg_too_many_openfiles:	dc.b	'ã‚ªãƒ¼ãƒ—ãƒ³ã—ã¦ã„ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ãŒå¤šã™ãã¾ã™',0
+msg_bad_name:		dc.b	'åå‰ãŒç„¡åŠ¹ã§ã™',0
+msg_bad_drive:		dc.b	'ãƒ‰ãƒ©ã‚¤ãƒ–ã®æŒ‡å®šãŒç„¡åŠ¹ã§ã™',0
+msg_write_disabled:	dc.b	'æ›¸ãè¾¼ã¿ãŒè¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“',0
+msg_directory_full:	dc.b	'ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãŒæº€æ¯ã§ã™',0
+msg_disk_full:		dc.b	'ãƒ‡ã‚£ã‚¹ã‚¯ãŒæº€æ¯ã§ã™',0
 
 msg_myname:			dc.b	'touch'
 msg_colon:			dc.b	': ',0
-msg_no_memory:			dc.b	'ƒƒ‚ƒŠ‚ª‘«‚è‚Ü‚¹‚ñ',CR,LF,0
-msg_illegal_option:		dc.b	'•s³‚ÈƒIƒvƒVƒ‡ƒ“ -- ',0
-msg_bad_date:			dc.b	'“ú•t‚Æ‚Ìw’è‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñ',0
-msg_bad_year:			dc.b	'”N‚Í1980-2107‚Ì”ÍˆÍ‚ÉŒÀ‚ç‚ê‚Ü‚·',CR,LF,0
-msg_too_few_args:		dc.b	'ˆø”‚ª‘«‚è‚Ü‚¹‚ñ',0
-msg_cannot_access_root:		dc.b	'ƒ‹[ƒgEƒfƒBƒŒƒNƒgƒŠ‚É‚ÍƒAƒNƒZƒX‚Å‚«‚Ü‚¹‚ñ',0
-msg_cannot_access_link:		dc.b	'lndrv‚ª‘g‚İ‚Ü‚ê‚Ä‚¢‚È‚¢‚½‚ßƒVƒ“ƒ{ƒŠƒbƒNEƒŠƒ“ƒNQÆƒtƒ@ƒCƒ‹‚ÉƒAƒNƒZƒX‚Å‚«‚Ü‚¹‚ñ',0
-msg_bad_link:			dc.b	'ˆÙí‚ÈƒVƒ“ƒ{ƒŠƒbƒNEƒŠƒ“ƒN‚Å‚·',0
-msg_cannot_resume_mode:		dc.b	'PANIC! ‘®«‚ğŒ³‚É–ß‚¹‚Ü‚¹‚ñ‚Å‚µ‚½',0
+msg_no_memory:			dc.b	'ãƒ¡ãƒ¢ãƒªãŒè¶³ã‚Šã¾ã›ã‚“',CR,LF,0
+msg_illegal_option:		dc.b	'ä¸æ­£ãªã‚ªãƒ—ã‚·ãƒ§ãƒ³ -- ',0
+msg_bad_date:			dc.b	'æ—¥ä»˜ã¨æ™‚åˆ»ã®æŒ‡å®šãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“',0
+msg_bad_year:			dc.b	'å¹´ã¯1980-2107ã®ç¯„å›²ã«é™ã‚‰ã‚Œã¾ã™',CR,LF,0
+msg_too_few_args:		dc.b	'å¼•æ•°ãŒè¶³ã‚Šã¾ã›ã‚“',0
+msg_cannot_access_root:		dc.b	'ãƒ«ãƒ¼ãƒˆãƒ»ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«ã¯ã‚¢ã‚¯ã‚»ã‚¹ã§ãã¾ã›ã‚“',0
+msg_cannot_access_link:		dc.b	'lndrvãŒçµ„ã¿è¾¼ã¾ã‚Œã¦ã„ãªã„ãŸã‚ã‚·ãƒ³ãƒœãƒªãƒƒã‚¯ãƒ»ãƒªãƒ³ã‚¯å‚ç…§ãƒ•ã‚¡ã‚¤ãƒ«ã«ã‚¢ã‚¯ã‚»ã‚¹ã§ãã¾ã›ã‚“',0
+msg_bad_link:			dc.b	'ç•°å¸¸ãªã‚·ãƒ³ãƒœãƒªãƒƒã‚¯ãƒ»ãƒªãƒ³ã‚¯ã§ã™',0
+msg_cannot_resume_mode:		dc.b	'PANIC! å±æ€§ã‚’å…ƒã«æˆ»ã›ã¾ã›ã‚“ã§ã—ãŸ',0
 msg_usage:			dc.b	CR,LF
-				dc.b	'g—p–@:  touch [-cdf] [ -rR <QÆƒtƒ@ƒCƒ‹> | [[CC]YY]MMDDhhmm[.ss] ] [--] <ƒtƒ@ƒCƒ‹> ...'
+				dc.b	'ä½¿ç”¨æ³•:  touch [-cdf] [ -rR <å‚ç…§ãƒ•ã‚¡ã‚¤ãƒ«> | [[CC]YY]MMDDhhmm[.ss] ] [--] <ãƒ•ã‚¡ã‚¤ãƒ«> ...'
 msg_newline:			dc.b	CR,LF,0
 *****************************************************************
 .bss

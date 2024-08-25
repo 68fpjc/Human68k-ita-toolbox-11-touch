@@ -1,6 +1,6 @@
-MANIFEST       ���̃t�@�C��
-README         �܂��ŏ��ɂ��ǂ݉�����
-NOTICE         �Ō��Ƌ����ɂ��Ă̍�����
-CHANGES        touch�̃��f���`�F���W�̗���
-touch.1        touch�̃}�j���A��
-touch.x        touch���s�t�@�C��
+MANIFEST       このファイル
+README         まず最初にお読み下さい
+NOTICE         版権と許諾についての告示書
+CHANGES        touchのモデルチェンジの履歴
+touch.1        touchのマニュアル
+touch.x        touch実行ファイル
